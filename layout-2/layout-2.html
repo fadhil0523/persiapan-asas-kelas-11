@@ -8,7 +8,26 @@ Buat seperti yang ada di ./layout-2.png -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Layout 2</title>
   </head>
-  <body></body>
+  <body class="bg-gray-200 justify-center flex pt-30 relative">
+    <div class="bg-red-500 text-white px-2 h-10 flex justify-center items-center rounded-2xl absolute -mr-90 -mt-5">
+      <p class="">
+        Diskon 50%
+      </p>
+    </div>
+
+    <div class="bg-white px-3 py-3 w-100 h-100 rounded-2xl flex justify-center flex-col">
+      <div class="bg-blue-100 w-95 h-70 rounded-2xl -mt-18">
+        <div class="w-10 h-10 bg-red-500 rounded-full ml-80 mt-3"></div>
+        <div class="flex justify-center items-center">
+          <p class="text-blue-700 font-semibold -mb-42 ">Area Gambar Product</p>
+        </div>
+        <div class="bg-gray-700 text-white px-3 py-1 w-30 rounded mt-42 ml-5">Stok Terbatas</div>
+      </div>
+      <p class="text-xl font-bold mt-5">Keyboard Mechanical</p>
+      <p class="text-sm text-gray-300 mt-5 -mb-15">Switch tactile dengan lampu rgb</p>
+    </div>
+  </body>
 </html>
