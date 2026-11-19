@@ -10,14 +10,14 @@
     <title>Latihan Negative Values Tailwind</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="p-8">
+  <body class="p-8 relative">
     <!-- Banner Utama -->
     <div class="bg-indigo-600 h-40 rounded-xl p-6 text-white">
       <h1 class="text-2xl font-bold">Halaman Profil</h1>
     </div>
 
     <!-- Kartu Informasi (Harus ditarik ke atas agar menimpa banner biru) -->
-    <div class="bg-white shadow-xl rounded-xl p-6 mx-6 border border-gray-100">
+    <div class="bg-white shadow-xl rounded-xl p-6 mx-6 border border-gray-100 absolute z-2 -mt-10">
       <h2 class="text-xl font-semibold text-gray-800">Nama Siswa</h2>
       <p class="text-gray-600">Kelas XI B - Rekayasa Perangkat Lunak</p>
     </div>
@@ -27,4 +27,7 @@
 <!-- Note:   
   1. Penulisan kode / sintaks yang digunakan: ...
   2. Kesimpulan / Alasan: ...
+  jawaban:
+    sintaks yang digunakan adalah position dengan value relative di bagian parent dan absolute di bagian child 
+    kemudian menggunakan value "z" agar child bisa menimpa (overlap) si parent
 -->
